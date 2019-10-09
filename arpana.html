@@ -55,9 +55,16 @@
         background-color:none; 
             } 
 
-      card-body
+      .card
       {
         padding: 10px;
+        transition: transform .3s ease-out;
+        display: inline-block;
+      }
+
+      
+      .card:hover {
+        transform: translate(0, -5px);
       }
     </style>
   </head>
