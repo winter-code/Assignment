@@ -41,12 +41,12 @@
 
     /* Green */
       .order {
-        border-color: #008080;
+        border-color: #00808C;
         color: green;
     }
 
       .order:hover {
-        background-color: #008080;
+        background-color: #00808C;
         color: white;
     }
 
@@ -65,7 +65,22 @@
       
       .card:hover {
         transform: translate(0, -5px);
+        
+        box-shadow: 4px 4px 7px rgba(0,0,0,0.1);
+
       }
+
+      .card-title{
+        color: #4d4e4a;
+        font-size: 4;
+      }
+
+      .card:hover .card-body .card-title {
+        color: #00808C;
+ 
+      }
+
+
     </style>
   </head>
   <body>
@@ -94,7 +109,7 @@
                 <td>
                   <div class="card-body" >
                   <!--Title-->
-                  <h7 class="card-text" style="line-height: 0.8;"> <b> Blog / Article </b></h7>
+                  <h7 class="card-title" style="line-height: 0.8;"> <b> Blog / Article </b></h7>
                   <font size="3px" class="card-text" > from &#8377;500 </font>
 
                 </td>
@@ -138,7 +153,7 @@
                 <td>
                   <div class="card-body" >
                   <!--Title-->
-                  <h7 class="card-text" style="line-height: 0.8;"> <b> Blog / Article </b></h7>
+                  <h7 class="card-title" style="line-height: 0.8;"> <b> Blog / Article </b></h7>
                   <font size="3px" class="card-text" > from &#8377;500 </font>
 
                 </td>
@@ -181,7 +196,7 @@
                 <td>
                   <div class="card-body" >
                   <!--Title-->
-                  <h7 class="card-text" style="line-height: 0.8;"> <b> Blog / Article </b></h7>
+                  <h7 class="card-title" style="line-height: 0.8;"> <b> Blog / Article </b></h7>
                   <font size="3px" class="card-text" > from &#8377;500 </font>
 
                 </td>
