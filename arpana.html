@@ -28,7 +28,7 @@
       .image-cropper {
         width: 80px;
         height: 80px;
-        
+        background-color: #00808C;
         overflow: hidden;
         border-radius: 50%;
       }
@@ -75,7 +75,7 @@
       
       .card:hover
       {
-        transform: translate(0, -5px);
+        
         box-shadow: 4px 4px 7px rgba(0,0,0,0.1);
       }
 
@@ -93,10 +93,62 @@
         text-shadow: 0.4px 0.4px 2px rgba(0,0,0,0.1);
       }
 
+      .card:hover .image-cropper img 
+      {
+        opacity: 0;
+      }
+
       .fa-stack
       {
         padding: 10px 38px;
       }
+
+      #Hnav
+      {
+        width: 85%;
+        height: 60px;
+        box-shadow: 0px 2px 4px rgba(0,0,0,.1);
+        margin: 0 auto;
+        text-align: left;
+        padding-left: 60px;
+        padding-top: 20px;
+        z-index: 1;
+      }
+
+      /*#Vnav
+      {
+        width: 50px;
+        height: 100%;
+        box-shadow: 2px 0px 4px rgba(0,0,0,.1);
+        margin-left: 0px;
+        margin-top: 0px;
+
+        float: left;
+      }*/
+       .Vnav {
+      height: 100%;
+      width: 80px;
+      position: fixed;
+      z-index: 4;
+      top: 0;
+      left: 70px;
+      box-shadow: 4px 0px 5px rgba(0,0,0,.2);
+      overflow-x: hidden;
+      padding-top: 100px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      }
+      #VE
+      {
+        
+        padding: 2px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #818181;
+        display: block;
+      }
+
 
       #header
       {
@@ -138,9 +190,29 @@
 <body>
 
 <div class="mid" >  
+
+  <div class="Vnav" > 
+    <div id="VE"> ELEM1 
+    </div>
+    <div id="VE"> ELEM1 
+    </div>
+    <div id="VE"> ELEM1 
+    </div>
+
+
+
+  </div>
+
+  <div id="Hnav" > 
+    <nav class="navbar navbar-dark fixed-top bg-light flex-md-nowrap p-0 shadow " style="height: 70px; margin-left: 150px; margin-right: 140px;">
+          <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#"
+            style="padding-left: 170px; color: black;">white<strong>panda</strong></a>
+    </nav>
+  </div>
+
   <div class='row' style="display: inline-block">
     <div id="header" style="display: inline-block">
-      <font size="25px" > Content Store </font>
+      <font size="15px" > Content Store </font>
  
       <div id="text-area">
         <font color="#008080" style="line-height: 1.8; font-size: 20px;" > Got bulk orders or similar orders? Order easily by filling in an excel sheet.
