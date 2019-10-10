@@ -5,6 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Custom fonts for this template -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" rel="stylesheet" type="text/css" media="all" />
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
     <title>WhitePanda Orders</title>
     <style type=text/css >
@@ -39,7 +44,7 @@
         cursor: pointer;
       }
 
-    /* Green */
+      /* Green */
       .order
       {
         border-color: #00808C;
@@ -85,7 +90,12 @@
       .card:hover .card-body .card-title
       {
         color: #00808C;
-        text-shadow: 0.4px 0.4px 2px rgba(0,0,0,0.1)
+        text-shadow: 0.4px 0.4px 2px rgba(0,0,0,0.1);
+      }
+
+      .fa-stack
+      {
+        padding: 10px 38px;
       }
 
       #header
@@ -108,6 +118,16 @@
 
       }
 
+      #footer
+      {
+        width: auto;
+        height: 30%;
+        text-align: center;
+        color: rgba(0,0,0,0.7);
+        font-size: 16px;
+        padding: 15px;
+      }
+
       
 
 
@@ -115,377 +135,441 @@
   </head>
 
 
-  <body>
+<body>
 
-<div class="mid" >
-
-
-
-  
-<div class='row' style="display: inline-block">
-  <div id="header" style="display: inline-block">
-    <h1> Content Store </h1>
+<div class="mid" >  
+  <div class='row' style="display: inline-block">
+    <div id="header" style="display: inline-block">
+      <font size="25px" > Content Store </font>
  
-  <div id="text-area">
-    <font color="#008080" style="line-height: 1.8; font-size: 20px;" > Got bulk orders? Order easily by filling in an excel sheet. </font> <p>
-    <font size="3px" color=grey style="line-height: 0.2;" >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, <a style="text-decoration: underline;"> sunt in culpa qui officia deserunt mollit anim id est laborum </a>. 
-    </font>
-    <br> <br>
-    <a href="#" class="btn order" style="width: 20rem"> Order via Excel sheet </a>
-  </div>
+      <div id="text-area">
+        <font color="#008080" style="line-height: 1.8; font-size: 20px;" > Got bulk orders or similar orders? Order easily by filling in an excel sheet.
+        </font>
+        <p>
+        <font size="3px" color=grey style="line-height: 0.2;" >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, <a style="text-decoration: underline;"> sunt in culpa qui officia deserunt mollit anim id est laborum </a>. 
+        </font>
+        <br>
+        <br>
+        <a href="#" class="btn order" style="width: 20rem"> Order via Excel sheet </a>
+      </div>
+    </div>
+    <br>
+
+        <div class="card m-5 flex-row flex-wrap" style="width: 22rem;">
+
+          <!-- Card image and title with price-->
+              <table>
+                <tr>
+                <td width=25% >
+                  <div class="view" style="padding: 6px;">
+                      <div class="image-cropper" >
+
+                      <img src="https://cdn3.vectorstock.com/i/1000x1000/78/07/blue-abstract-background-square-vector-4717807.jpg" class="img-fluid" alt="" style="float: left; align: center;">
+                      
+                      </div>
+                </td>
+                <td>
+                  <div class="card-body" >
+                  <!--Title-->
+                  <h7 class="card-title" style="line-height: 0.8;"> <b> Blog / Article </b></h7> <br>
+                  <font size="3px" class="card-text" > from &#8377;500 </font>
+
+
+                </td>
+              </tr>
+            
+            </table>
+
+
+            <div class="row card-body" >
+                <!--Text-->
+                <div style="padding: 6px; font-size: 15px" >
+                    <p class="card-text"  >Typically 450-400 words, an e-book is perfect for your target audience ranging from prospective customers to users</p>
+                    <a href="#" class="btn order">Order </a>
+                </div>
+            </div>
+            </div>
+
+
+         <div class="card m-5 flex-row flex-wrap" style="width: 22rem;">
+
+          <!-- Card image and title with price-->
+              <table>
+                <tr>
+                <td width=25% >
+                  <div class="view" style="padding: 6px;">
+                      <div class="image-cropper" >
+
+                      <img src="https://cdn3.vectorstock.com/i/1000x1000/78/07/blue-abstract-background-square-vector-4717807.jpg" class="img-fluid" alt="" style="float: left; align: center;">
+                      
+                      </div>
+                </td>
+                <td>
+                  <div class="card-body" >
+                  <!--Title-->
+                  <h7 class="card-title" style="line-height: 0.8;"> <b> News / Article </b></h7> <br>
+                  <font size="3px" class="card-text" > from &#8377;500 </font>
+
+
+                </td>
+              </tr>
+            
+            </table>
+
+
+            <div class="row card-body" >
+                <!--Text-->
+                <div style="padding: 6px; font-size: 15px" >
+                    <p class="card-text"  >Typically 450-400 words, an e-book is perfect for your target audience ranging from prospective customers to users</p>
+                    <a href="#" class="btn order">Order</a>
+                </div>
+            </div>
+            </div>
+
+
+         <div class="card m-5 flex-row flex-wrap" style="width: 22rem;">
+
+          <!-- Card image and title with price-->
+              <table>
+                <tr>
+                <td width=25% >
+                  <div class="view" style="padding: 6px;">
+                      <div class="image-cropper" >
+
+                      <img src="https://cdn3.vectorstock.com/i/1000x1000/78/07/blue-abstract-background-square-vector-4717807.jpg" class="img-fluid" alt="" style="float: left; align: center;">
+                      
+                      </div>
+                </td>
+                <td>
+                  <div class="card-body" >
+                  <!--Title-->
+                  <h7 class="card-title" style="line-height: 0.8;"> <b> Whitepaper </b></h7> <br>
+                  <font size="3px" class="card-text" > from &#8377;500 </font>
+
+
+                </td>
+              </tr>
+            
+            </table>
+
+
+            <div class="row card-body" >
+                <!--Text-->
+                <div style="padding: 6px; font-size: 15px" >
+                    <p class="card-text"  >Typically 450-400 words, an e-book is perfect for your target audience ranging from prospective customers to users</p>
+                    <a href="#" class="btn order">Order</a>
+                </div>
+            </div>
+            </div>
+        </div>
+  
+
+    <div class='row' style="display: inline-block">
+        <div class="card m-5 flex-row flex-wrap" style="width: 22rem;">
+
+          <!-- Card image and title with price-->
+              <table>
+                <tr>
+                <td width=25% >
+                  <div class="view" style="padding: 6px;">
+                      <div class="image-cropper" >
+
+                      <img src="https://cdn3.vectorstock.com/i/1000x1000/78/07/blue-abstract-background-square-vector-4717807.jpg" class="img-fluid" alt="" style="float: left; align: center;">
+                      
+                      </div>
+                </td>
+                <td>
+                  <div class="card-body" >
+                  <!--Title-->
+                  <h7 class="card-title" style="line-height: 0.8;"> <b> Blog / Article </b></h7> <br>
+                  <font size="3px" class="card-text" > from &#8377;500 </font>
+
+
+                </td>
+              </tr>
+            
+            </table>
+
+
+            <div class="row card-body" >
+                <!--Text-->
+                <div style="padding: 6px; font-size: 15px" >
+                    <p class="card-text"  >Typically 450-400 words, an e-book is perfect for your target audience ranging from prospective customers to users</p>
+                    <a href="#" class="btn order">Order </a>
+                </div>
+            </div>
+            </div>
+
+
+         <div class="card m-5 flex-row flex-wrap" style="width: 22rem;">
+
+          <!-- Card image and title with price-->
+              <table>
+                <tr>
+                <td width=25% >
+                  <div class="view" style="padding: 6px;">
+                      <div class="image-cropper" >
+
+                      <img src="https://cdn3.vectorstock.com/i/1000x1000/78/07/blue-abstract-background-square-vector-4717807.jpg" class="img-fluid" alt="" style="float: left; align: center;">
+                      
+                      </div>
+                </td>
+                <td>
+                  <div class="card-body" >
+                  <!--Title-->
+                  <h7 class="card-title" style="line-height: 0.8;"> <b> News / Article </b></h7> <br>
+                  <font size="3px" class="card-text" > from &#8377;500 </font>
+
+
+                </td>
+              </tr>
+            
+            </table>
+
+
+            <div class="row card-body" >
+                <!--Text-->
+                <div style="padding: 6px; font-size: 15px" >
+                    <p class="card-text"  >Typically 450-400 words, an e-book is perfect for your target audience ranging from prospective customers to users</p>
+                    <a href="#" class="btn order">Order</a>
+                </div>
+            </div>
+            </div>
+
+
+         <div class="card m-5 flex-row flex-wrap" style="width: 22rem;">
+
+          <!-- Card image and title with price-->
+              <table>
+                <tr>
+                <td width=25% >
+                  <div class="view" style="padding: 6px;">
+                      <div class="image-cropper" >
+
+                      <img src="https://cdn3.vectorstock.com/i/1000x1000/78/07/blue-abstract-background-square-vector-4717807.jpg" class="img-fluid" alt="" style="float: left; align: center;">
+                      
+                      </div>
+                </td>
+                <td>
+                  <div class="card-body" >
+                  <!--Title-->
+                  <h7 class="card-title" style="line-height: 0.8;"> <b> Whitepaper </b></h7> <br>
+                  <font size="3px" class="card-text" > from &#8377;500 </font>
+
+
+                </td>
+              </tr>
+            
+            </table>
+
+
+            <div class="row card-body" >
+                <!--Text-->
+                <div style="padding: 6px; font-size: 15px" >
+                    <p class="card-text"  >Typically 450-400 words, an e-book is perfect for your target audience ranging from prospective customers to users</p>
+                    <a href="#" class="btn order">Order</a>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        
+      
+    
+        
+
+
+ 
+
+
+    <div class='row' style="display: inline-block">
+        <div class="card m-5 flex-row flex-wrap" style="width: 22rem;">
+
+          <!-- Card image and title with price-->
+              <table>
+                <tr>
+                <td width=25% >
+                  <div class="view" style="padding: 6px;">
+                      <div class="image-cropper" >
+
+                      <img src="https://cdn3.vectorstock.com/i/1000x1000/78/07/blue-abstract-background-square-vector-4717807.jpg" class="img-fluid" alt="" style="float: left; align: center;">
+                      
+                      </div>
+                </td>
+                <td>
+                  <div class="card-body" >
+                  <!--Title-->
+                  <h7 class="card-title" style="line-height: 0.8;"> <b> Blog / Article </b></h7> <br>
+                  <font size="3px" class="card-text" > from &#8377;500 </font>
+
+
+                </td>
+              </tr>
+            
+            </table>
+
+
+            <div class="row card-body" >
+                <!--Text-->
+                <div style="padding: 6px; font-size: 15px" >
+                    <p class="card-text"  >Typically 450-400 words, an e-book is perfect for your target audience ranging from prospective customers to users</p>
+                    <a href="#" class="btn order">Order </a>
+                </div>
+            </div>
+            </div>
+
+
+         <div class="card m-5 flex-row flex-wrap" style="width: 22rem;">
+
+          <!-- Card image and title with price-->
+              <table>
+                <tr>
+                <td width=25% >
+                  <div class="view" style="padding: 6px;">
+                      <div class="image-cropper" >
+
+                      <img src="https://cdn3.vectorstock.com/i/1000x1000/78/07/blue-abstract-background-square-vector-4717807.jpg" class="img-fluid" alt="" style="float: left; align: center;">
+                      
+                      </div>
+                </td>
+                <td>
+                  <div class="card-body" >
+                  <!--Title-->
+                  <h7 class="card-title" style="line-height: 0.8;"> <b> News / Article </b></h7> <br>
+                  <font size="3px" class="card-text" > from &#8377;500 </font>
+
+
+                </td>
+              </tr>
+            
+            </table>
+
+
+            <div class="row card-body" >
+                <!--Text-->
+                <div style="padding: 6px; font-size: 15px" >
+                    <p class="card-text"  >Typically 450-400 words, an e-book is perfect for your target audience ranging from prospective customers to users</p>
+                    <a href="#" class="btn order">Order</a>
+                </div>
+            </div>
+            </div>
+
+
+         <div class="card m-5 flex-row flex-wrap" style="width: 22rem;">
+
+          <!-- Card image and title with price-->
+              <table>
+                <tr>
+                <td width=25% >
+                  <div class="view" style="padding: 6px;">
+                      <div class="image-cropper" >
+
+                      <img src="https://cdn3.vectorstock.com/i/1000x1000/78/07/blue-abstract-background-square-vector-4717807.jpg" class="img-fluid" alt="" style="float: left; align: center;">
+                      
+                      </div>
+                </td>
+                <td>
+                  <div class="card-body" >
+                  <!--Title-->
+                  <h7 class="card-title" style="line-height: 0.8;"> <b> Whitepaper </b></h7> <br>
+                  <font size="3px" class="card-text" > from &#8377;500 </font>
+
+
+                </td>
+              </tr>
+            
+            </table>
+
+
+            <div class="row card-body" >
+                <!--Text-->
+                <div style="padding: 6px; font-size: 15px" >
+                    <p class="card-text"  >Typically 450-400 words, an e-book is perfect for your target audience ranging from prospective customers to users</p>
+                    <a href="#" class="btn order">Order</a>
+                </div>
+            </div>
+            </div>
+        </div>
+
+
+
+
+      <div class='row' style="display: inline-block">
+        <div class="card m-5 flex-row flex-wrap" align=left style="width: 22rem; float: left;">
+
+          <!-- Card image and title with price-->
+              <table>
+                <tr>
+                <td width=25% >
+                  <div class="view" style="padding: 6px;">
+                      <div class="image-cropper" >
+
+                      <img src="https://cdn3.vectorstock.com/i/1000x1000/78/07/blue-abstract-background-square-vector-4717807.jpg" class="img-fluid" alt="" style="float: left; align: center;">
+                      
+                      </div>
+                </td>
+                <td>
+                  <div class="card-body" >
+                  <!--Title-->
+                  <h7 class="card-title" style="line-height: 0.8;"> <b> Blog / Article </b></h7> <br>
+                  <font size="3px" class="card-text" > from &#8377;500 </font>
+
+
+                </td>
+              </tr>
+            
+            </table>
+
+
+            <div class="row card-body" >
+                <!--Text-->
+                <div style="padding: 6px; font-size: 15px" >
+                    <p class="card-text"  >Typically 450-400 words, an e-book is perfect for your target audience ranging from prospective customers to users</p>
+                    <a href="#" class="btn order">Order </a>
+                </div>
+            </div>
+            </div>
+          </div>
+<div id="footer" > 
+           <li class="list-inline-item">
+              <a href="#" style="color: rgba(0,0,0,0.4);">
+                <span class="fa-stack fa-lg">
+                  
+                  <i class="fab fa-twitter fa-stack-2x "></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" style="color: rgba(0,0,0,0.4);">
+                <span class="fa-stack fa-lg">
+                  
+                  <i class="fab fa-linkedin-in fa-stack-2x "></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" style="color: rgba(0,0,0,0.4);">
+                <span class="fa-stack fa-lg">
+                  
+                  <i class="fab fa-instagram fa-stack-2x "></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" style="color: rgba(0,0,0,0.4);">
+                <span class="fa-stack fa-lg">
+                  
+                  <i class="fab fa-facebook-f fa-stack-2x "></i>
+                </span>
+              </a>
+            </li>
 </div>
-<br>
-
-        <div class="card m-5 flex-row flex-wrap" style="width: 22rem;">
-
-          <!-- Card image and title with price-->
-              <table>
-                <tr>
-                <td width=25% >
-                  <div class="view" style="padding: 6px;">
-                      <div class="image-cropper" >
-
-                      <img src="https://cdn3.vectorstock.com/i/1000x1000/78/07/blue-abstract-background-square-vector-4717807.jpg" class="img-fluid" alt="" style="float: left; align: center;">
-                      
-                      </div>
-                </td>
-                <td>
-                  <div class="card-body" >
-                  <!--Title-->
-                  <h7 class="card-title" style="line-height: 0.8;"> <b> Blog / Article </b></h7> <br>
-                  <font size="3px" class="card-text" > from &#8377;500 </font>
-
-
-                </td>
-              </tr>
-            
-            </table>
-
-
-            <div class="row card-body" >
-                <!--Text-->
-                <div style="padding: 6px; font-size: 15px" >
-                    <p class="card-text"  >Typically 450-400 words, an e-book is perfect for your target audience ranging from prospective customers to users</p>
-                    <a href="#" class="btn order">Order </a>
-                </div>
-            </div>
-            </div>
-
-
-         <div class="card m-5 flex-row flex-wrap" style="width: 22rem;">
-
-          <!-- Card image and title with price-->
-              <table>
-                <tr>
-                <td width=25% >
-                  <div class="view" style="padding: 6px;">
-                      <div class="image-cropper" >
-
-                      <img src="https://cdn3.vectorstock.com/i/1000x1000/78/07/blue-abstract-background-square-vector-4717807.jpg" class="img-fluid" alt="" style="float: left; align: center;">
-                      
-                      </div>
-                </td>
-                <td>
-                  <div class="card-body" >
-                  <!--Title-->
-                  <h7 class="card-title" style="line-height: 0.8;"> <b> News / Article </b></h7> <br>
-                  <font size="3px" class="card-text" > from &#8377;500 </font>
-
-
-                </td>
-              </tr>
-            
-            </table>
-
-
-            <div class="row card-body" >
-                <!--Text-->
-                <div style="padding: 6px; font-size: 15px" >
-                    <p class="card-text"  >Typically 450-400 words, an e-book is perfect for your target audience ranging from prospective customers to users</p>
-                    <a href="#" class="btn order">Order</a>
-                </div>
-            </div>
-            </div>
-
-
-         <div class="card m-5 flex-row flex-wrap" style="width: 22rem;">
-
-          <!-- Card image and title with price-->
-              <table>
-                <tr>
-                <td width=25% >
-                  <div class="view" style="padding: 6px;">
-                      <div class="image-cropper" >
-
-                      <img src="https://cdn3.vectorstock.com/i/1000x1000/78/07/blue-abstract-background-square-vector-4717807.jpg" class="img-fluid" alt="" style="float: left; align: center;">
-                      
-                      </div>
-                </td>
-                <td>
-                  <div class="card-body" >
-                  <!--Title-->
-                  <h7 class="card-title" style="line-height: 0.8;"> <b> Whitepaper </b></h7> <br>
-                  <font size="3px" class="card-text" > from &#8377;500 </font>
-
-
-                </td>
-              </tr>
-            
-            </table>
-
-
-            <div class="row card-body" >
-                <!--Text-->
-                <div style="padding: 6px; font-size: 15px" >
-                    <p class="card-text"  >Typically 450-400 words, an e-book is perfect for your target audience ranging from prospective customers to users</p>
-                    <a href="#" class="btn order">Order</a>
-                </div>
-            </div>
-            </div>
-        </div>
-  
-
-<div class='row' style="display: inline-block">
-        <div class="card m-5 flex-row flex-wrap" style="width: 22rem;">
-
-          <!-- Card image and title with price-->
-              <table>
-                <tr>
-                <td width=25% >
-                  <div class="view" style="padding: 6px;">
-                      <div class="image-cropper" >
-
-                      <img src="https://cdn3.vectorstock.com/i/1000x1000/78/07/blue-abstract-background-square-vector-4717807.jpg" class="img-fluid" alt="" style="float: left; align: center;">
-                      
-                      </div>
-                </td>
-                <td>
-                  <div class="card-body" >
-                  <!--Title-->
-                  <h7 class="card-title" style="line-height: 0.8;"> <b> Blog / Article </b></h7> <br>
-                  <font size="3px" class="card-text" > from &#8377;500 </font>
-
-
-                </td>
-              </tr>
-            
-            </table>
-
-
-            <div class="row card-body" >
-                <!--Text-->
-                <div style="padding: 6px; font-size: 15px" >
-                    <p class="card-text"  >Typically 450-400 words, an e-book is perfect for your target audience ranging from prospective customers to users</p>
-                    <a href="#" class="btn order">Order </a>
-                </div>
-            </div>
-            </div>
-
-
-         <div class="card m-5 flex-row flex-wrap" style="width: 22rem;">
-
-          <!-- Card image and title with price-->
-              <table>
-                <tr>
-                <td width=25% >
-                  <div class="view" style="padding: 6px;">
-                      <div class="image-cropper" >
-
-                      <img src="https://cdn3.vectorstock.com/i/1000x1000/78/07/blue-abstract-background-square-vector-4717807.jpg" class="img-fluid" alt="" style="float: left; align: center;">
-                      
-                      </div>
-                </td>
-                <td>
-                  <div class="card-body" >
-                  <!--Title-->
-                  <h7 class="card-title" style="line-height: 0.8;"> <b> News / Article </b></h7> <br>
-                  <font size="3px" class="card-text" > from &#8377;500 </font>
-
-
-                </td>
-              </tr>
-            
-            </table>
-
-
-            <div class="row card-body" >
-                <!--Text-->
-                <div style="padding: 6px; font-size: 15px" >
-                    <p class="card-text"  >Typically 450-400 words, an e-book is perfect for your target audience ranging from prospective customers to users</p>
-                    <a href="#" class="btn order">Order</a>
-                </div>
-            </div>
-            </div>
-
-
-         <div class="card m-5 flex-row flex-wrap" style="width: 22rem;">
-
-          <!-- Card image and title with price-->
-              <table>
-                <tr>
-                <td width=25% >
-                  <div class="view" style="padding: 6px;">
-                      <div class="image-cropper" >
-
-                      <img src="https://cdn3.vectorstock.com/i/1000x1000/78/07/blue-abstract-background-square-vector-4717807.jpg" class="img-fluid" alt="" style="float: left; align: center;">
-                      
-                      </div>
-                </td>
-                <td>
-                  <div class="card-body" >
-                  <!--Title-->
-                  <h7 class="card-title" style="line-height: 0.8;"> <b> Whitepaper </b></h7> <br>
-                  <font size="3px" class="card-text" > from &#8377;500 </font>
-
-
-                </td>
-              </tr>
-            
-            </table>
-
-
-            <div class="row card-body" >
-                <!--Text-->
-                <div style="padding: 6px; font-size: 15px" >
-                    <p class="card-text"  >Typically 450-400 words, an e-book is perfect for your target audience ranging from prospective customers to users</p>
-                    <a href="#" class="btn order">Order</a>
-                </div>
-            </div>
-            </div>
-        </div>
-
-        
-      
-    
-        
-
-
+            <p style="color: rgba(0,0,0,0.5); font-size: 17.5px; padding-top: 6px; padding-bottom: 4px; line-height: 1.1;" > Copyright @ 2019 White Panda Media Pvt. Ltd. 
+       <br>  All right reserved </p>
  
-
-
-<div class='row' style="display: inline-block">
-        <div class="card m-5 flex-row flex-wrap" style="width: 22rem;">
-
-          <!-- Card image and title with price-->
-              <table>
-                <tr>
-                <td width=25% >
-                  <div class="view" style="padding: 6px;">
-                      <div class="image-cropper" >
-
-                      <img src="https://cdn3.vectorstock.com/i/1000x1000/78/07/blue-abstract-background-square-vector-4717807.jpg" class="img-fluid" alt="" style="float: left; align: center;">
-                      
-                      </div>
-                </td>
-                <td>
-                  <div class="card-body" >
-                  <!--Title-->
-                  <h7 class="card-title" style="line-height: 0.8;"> <b> Blog / Article </b></h7> <br>
-                  <font size="3px" class="card-text" > from &#8377;500 </font>
-
-
-                </td>
-              </tr>
-            
-            </table>
-
-
-            <div class="row card-body" >
-                <!--Text-->
-                <div style="padding: 6px; font-size: 15px" >
-                    <p class="card-text"  >Typically 450-400 words, an e-book is perfect for your target audience ranging from prospective customers to users</p>
-                    <a href="#" class="btn order">Order </a>
-                </div>
-            </div>
-            </div>
-
-
-         <div class="card m-5 flex-row flex-wrap" style="width: 22rem;">
-
-          <!-- Card image and title with price-->
-              <table>
-                <tr>
-                <td width=25% >
-                  <div class="view" style="padding: 6px;">
-                      <div class="image-cropper" >
-
-                      <img src="https://cdn3.vectorstock.com/i/1000x1000/78/07/blue-abstract-background-square-vector-4717807.jpg" class="img-fluid" alt="" style="float: left; align: center;">
-                      
-                      </div>
-                </td>
-                <td>
-                  <div class="card-body" >
-                  <!--Title-->
-                  <h7 class="card-title" style="line-height: 0.8;"> <b> News / Article </b></h7> <br>
-                  <font size="3px" class="card-text" > from &#8377;500 </font>
-
-
-                </td>
-              </tr>
-            
-            </table>
-
-
-            <div class="row card-body" >
-                <!--Text-->
-                <div style="padding: 6px; font-size: 15px" >
-                    <p class="card-text"  >Typically 450-400 words, an e-book is perfect for your target audience ranging from prospective customers to users</p>
-                    <a href="#" class="btn order">Order</a>
-                </div>
-            </div>
-            </div>
-
-
-         <div class="card m-5 flex-row flex-wrap" style="width: 22rem;">
-
-          <!-- Card image and title with price-->
-              <table>
-                <tr>
-                <td width=25% >
-                  <div class="view" style="padding: 6px;">
-                      <div class="image-cropper" >
-
-                      <img src="https://cdn3.vectorstock.com/i/1000x1000/78/07/blue-abstract-background-square-vector-4717807.jpg" class="img-fluid" alt="" style="float: left; align: center;">
-                      
-                      </div>
-                </td>
-                <td>
-                  <div class="card-body" >
-                  <!--Title-->
-                  <h7 class="card-title" style="line-height: 0.8;"> <b> Whitepaper </b></h7> <br>
-                  <font size="3px" class="card-text" > from &#8377;500 </font>
-
-
-                </td>
-              </tr>
-            
-            </table>
-
-
-            <div class="row card-body" >
-                <!--Text-->
-                <div style="padding: 6px; font-size: 15px" >
-                    <p class="card-text"  >Typically 450-400 words, an e-book is perfect for your target audience ranging from prospective customers to users</p>
-                    <a href="#" class="btn order">Order</a>
-                </div>
-            </div>
-            </div>
-        </div>
-
-        </div>
-
-      
-    
-        
-
-
-
 </div>     
-
-
-
-    </center>
+</center>
 </div>
   
 
@@ -494,5 +578,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+
+</body>
 </html>
