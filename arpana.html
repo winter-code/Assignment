@@ -7,9 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <!-- Custom fonts for this template -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" rel="stylesheet" type="text/css" media="all" />
-  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>WhitePanda Orders</title>
     <style type=text/css >
@@ -19,10 +17,12 @@
       {
         align-self: center;
         align-items: center;
-        background-color: none;
-        width: 90%;
+        background-color: #"#f5f7f7";
+        width: 100%;
+        height: 100%;
         margin: 0 auto;
         text-align: center;
+
       }
 
       .image-cropper {
@@ -39,8 +39,8 @@
         border: 2px solid black;
         background-color: white;
         color: black;
-        padding: 5px 28px;
-        font-size: 16px;
+        padding: 5px 26px;
+        font-size: 15px;
         cursor: pointer;
       }
 
@@ -71,6 +71,7 @@
         display: inline-block;
         border: 0px;
         text-align: left;
+        background-color: #FFFFFF;
       }
       
       .card:hover
@@ -105,50 +106,48 @@
 
       #Hnav
       {
-        width: 85%;
+        width: 80%;
         height: 60px;
-        box-shadow: 0px 2px 4px rgba(0,0,0,.1);
+        
         margin: 0 auto;
         text-align: left;
         padding-left: 60px;
         padding-top: 20px;
-        z-index: 1;
-      }
+        z-index: 0;
+        border-right: 0;
+        box-shadow: 
+        2px 2px 8px rgba(0, 0, 0, 0.15), 
+        inset -2px 0px 0px #fff;
+          }
 
-      /*#Vnav
-      {
-        width: 50px;
-        height: 100%;
-        box-shadow: 2px 0px 4px rgba(0,0,0,.1);
-        margin-left: 0px;
-        margin-top: 0px;
-
-        float: left;
-      }*/
        .Vnav {
       height: 100%;
-      width: 80px;
+      width: 79px;
       position: fixed;
-      z-index: 4;
+      
       top: 0;
       left: 70px;
-      box-shadow: 4px 0px 5px rgba(0,0,0,.2);
+      box-shadow: 2px 0px 5px rgba(0,0,0,0.1);
       overflow-x: hidden;
       padding-top: 100px;
       text-align: center;
       display: flex;
       flex-direction: column;
       }
-      #VE
+
+      .VE
       {
-        
-        padding: 2px;
+        padding-bottom: 10px;
         text-decoration: none;
-        font-size: 20px;
+        font-size: 22px;
         color: #818181;
         display: block;
       }
 
+      .VE > a
+      {
+        color: rgba(0,0,0,0.4);
+      }
 
       #header
       {
@@ -170,7 +169,7 @@
 
       }
 
-      #footer
+      .footer
       {
         width: auto;
         height: 30%;
@@ -180,7 +179,35 @@
         padding: 15px;
       }
 
-      
+      .icon-wrapper{
+          position:relative;
+          float:left;
+      }
+
+      *.icon-blue {color: #0088cc}
+
+      *.icon-grey {color: grey}
+
+      i {   
+          width:50px;
+          text-align:center;
+          vertical-align:middle;
+        }
+      .badge{
+          background: red;
+          width: auto;
+          height: auto;
+          margin: 0;
+          border-radius: 50%;
+          position:absolute;
+          top:-3px;
+          right:-3px;
+          padding:2px;
+          color: white;
+          font-size: 15px;
+        }
+
+
 
 
     </style>
@@ -188,42 +215,61 @@
 
 
 <body>
+<div class="Vnav" > 
+    <div class="VE"> 
+      <a href="#" >
+      <i class="fa fa-th-large" style="font-size:30px; " aria-hidden="true"></i>
+      </a>
+    </div>
+    <div class="VE">
+      <a href="#" >
+      <i class="fa fa-search" style="font-size:30px;" aria-hidden="true"></i>
+     </a>
+    </div>
+    <div class="VE">
+      <a href="#" >
+      <i class="fa fa-shopping-cart" style="font-size:30px;" aria-hidden="true"></i>
+      </a>
+    </div>
+  </div>
 
 <div class="mid" >  
-
-  <div class="Vnav" > 
-    <div id="VE"> ELEM1 
-    </div>
-    <div id="VE"> ELEM1 
-    </div>
-    <div id="VE"> ELEM1 
-    </div>
-
-
-
-  </div>
 
   <div id="Hnav" > 
     <nav class="navbar navbar-dark fixed-top bg-light flex-md-nowrap p-0 shadow " style="height: 70px; margin-left: 150px; margin-right: 140px;">
           <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#"
             style="padding-left: 170px; color: black;">white<strong>panda</strong></a>
+            <div class="VE" style="float: right; padding-right: 180px;">
+              <div class="icon-wrapper">
+                 <i class="fa fa-bell-o icon-grey" style="font-size: 30px;"></i>
+                 <span class="badge">100</span>
+              </div>
+              
+                <i class="far fa-user-circle" style="font-size: 30px;"></i>
+
+            </div>
     </nav>
   </div>
 
+
+
   <div class='row' style="display: inline-block">
-    <div id="header" style="display: inline-block">
-      <font size="15px" > Content Store </font>
+    <div id="header" style="display: inline-block ;  padding-bottom: 30px">
+      <font style="font-size: 38px ;" > Content Store </font>
  
       <div id="text-area">
-        <font color="#008080" style="line-height: 1.8; font-size: 20px;" > Got bulk orders or similar orders? Order easily by filling in an excel sheet.
+        <font color="#008080" style="line-height: 1.8; font-size: 18px;  padding-top: 30px" > Got bulk orders or similar orders? Order easily by filling in an excel sheet.
         </font>
         <p>
-        <font size="3px" color=grey style="line-height: 0.2;" >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, <a style="text-decoration: underline;"> sunt in culpa qui officia deserunt mollit anim id est laborum </a>. 
+        <font size="3px" color=grey style="line-height: 0.2; font-size: 14px;" >
+          <p>If you're wondering about an easy way to place orders in large numbers,
+      we provide a way customized just for that. Download our excel sheet, and fill
+      the order brief in the prescribed format and submit. In case you need any help, <a href="#" style="text-decoration: none;">
+       we are just a click away to assist you in placing your order.</a>
         </font>
         <br>
         <br>
-        <a href="#" class="btn order" style="width: 20rem"> Order via Excel sheet </a>
+        <a href="#" class="btn order" style="width: 18rem"> Order via Excel sheet </a>
       </div>
     </div>
     <br>
@@ -237,7 +283,7 @@
                   <div class="view" style="padding: 6px;">
                       <div class="image-cropper" >
 
-                      <img src="https://cdn3.vectorstock.com/i/1000x1000/78/07/blue-abstract-background-square-vector-4717807.jpg" class="img-fluid" alt="" style="float: left; align: center;">
+                      <img src="blue.jpg" class="img-fluid" alt="" style="float: left; align: center;">
                       
                       </div>
                 </td>
@@ -273,7 +319,7 @@
                   <div class="view" style="padding: 6px;">
                       <div class="image-cropper" >
 
-                      <img src="https://cdn3.vectorstock.com/i/1000x1000/78/07/blue-abstract-background-square-vector-4717807.jpg" class="img-fluid" alt="" style="float: left; align: center;">
+                      <img src="blue.jpg" class="img-fluid" alt="" style="float: left; align: center;">
                       
                       </div>
                 </td>
@@ -309,7 +355,7 @@
                   <div class="view" style="padding: 6px;">
                       <div class="image-cropper" >
 
-                      <img src="https://cdn3.vectorstock.com/i/1000x1000/78/07/blue-abstract-background-square-vector-4717807.jpg" class="img-fluid" alt="" style="float: left; align: center;">
+                      <img src="blue.jpg" class="img-fluid" alt="" style="float: left; align: center;">
                       
                       </div>
                 </td>
@@ -347,7 +393,7 @@
                   <div class="view" style="padding: 6px;">
                       <div class="image-cropper" >
 
-                      <img src="https://cdn3.vectorstock.com/i/1000x1000/78/07/blue-abstract-background-square-vector-4717807.jpg" class="img-fluid" alt="" style="float: left; align: center;">
+                      <img src="blue.jpg" class="img-fluid" alt="" style="float: left; align: center;">
                       
                       </div>
                 </td>
@@ -383,7 +429,7 @@
                   <div class="view" style="padding: 6px;">
                       <div class="image-cropper" >
 
-                      <img src="https://cdn3.vectorstock.com/i/1000x1000/78/07/blue-abstract-background-square-vector-4717807.jpg" class="img-fluid" alt="" style="float: left; align: center;">
+                      <img src="blue.jpg" class="img-fluid" alt="" style="float: left; align: center;">
                       
                       </div>
                 </td>
@@ -419,7 +465,7 @@
                   <div class="view" style="padding: 6px;">
                       <div class="image-cropper" >
 
-                      <img src="https://cdn3.vectorstock.com/i/1000x1000/78/07/blue-abstract-background-square-vector-4717807.jpg" class="img-fluid" alt="" style="float: left; align: center;">
+                      <img src="blue.jpg" class="img-fluid" alt="" style="float: left; align: center;">
                       
                       </div>
                 </td>
@@ -465,7 +511,7 @@
                   <div class="view" style="padding: 6px;">
                       <div class="image-cropper" >
 
-                      <img src="https://cdn3.vectorstock.com/i/1000x1000/78/07/blue-abstract-background-square-vector-4717807.jpg" class="img-fluid" alt="" style="float: left; align: center;">
+                      <img src="blue.jpg" class="img-fluid" alt="" style="float: left; align: center;">
                       
                       </div>
                 </td>
@@ -501,7 +547,7 @@
                   <div class="view" style="padding: 6px;">
                       <div class="image-cropper" >
 
-                      <img src="https://cdn3.vectorstock.com/i/1000x1000/78/07/blue-abstract-background-square-vector-4717807.jpg" class="img-fluid" alt="" style="float: left; align: center;">
+                      <img src="blue.jpg" class="img-fluid" alt="" style="float: left; align: center;">
                       
                       </div>
                 </td>
@@ -537,7 +583,7 @@
                   <div class="view" style="padding: 6px;">
                       <div class="image-cropper" >
 
-                      <img src="https://cdn3.vectorstock.com/i/1000x1000/78/07/blue-abstract-background-square-vector-4717807.jpg" class="img-fluid" alt="" style="float: left; align: center;">
+                      <img src="blue.jpg" class="img-fluid" alt="" style="float: left; align: center;">
                       
                       </div>
                 </td>
@@ -567,7 +613,10 @@
 
 
 
-      <div class='row' style="display: inline-block">
+      <table style="margin-left: 295px;">
+        <tr>
+          <td>
+            <div class='row' style="display: inline-block">
         <div class="card m-5 flex-row flex-wrap" align=left style="width: 22rem; float: left;">
 
           <!-- Card image and title with price-->
@@ -577,7 +626,7 @@
                   <div class="view" style="padding: 6px;">
                       <div class="image-cropper" >
 
-                      <img src="https://cdn3.vectorstock.com/i/1000x1000/78/07/blue-abstract-background-square-vector-4717807.jpg" class="img-fluid" alt="" style="float: left; align: center;">
+                      <img src="blue.jpg" class="img-fluid" alt="" style="float: left; align: center;">
                       
                       </div>
                 </td>
@@ -603,43 +652,60 @@
             </div>
             </div>
           </div>
-<div id="footer" > 
+        </td>
+      </tr>
+    </table>
+
+
+
+
+<div class="footer" > 
            <li class="list-inline-item">
               <a href="#" style="color: rgba(0,0,0,0.4);">
                 <span class="fa-stack fa-lg">
-                  
                   <i class="fab fa-twitter fa-stack-2x "></i>
                 </span>
               </a>
             </li>
+
             <li class="list-inline-item">
               <a href="#" style="color: rgba(0,0,0,0.4);">
                 <span class="fa-stack fa-lg">
-                  
                   <i class="fab fa-linkedin-in fa-stack-2x "></i>
                 </span>
               </a>
             </li>
+
             <li class="list-inline-item">
               <a href="#" style="color: rgba(0,0,0,0.4);">
                 <span class="fa-stack fa-lg">
-                  
                   <i class="fab fa-instagram fa-stack-2x "></i>
                 </span>
               </a>
             </li>
+
             <li class="list-inline-item">
               <a href="#" style="color: rgba(0,0,0,0.4);">
                 <span class="fa-stack fa-lg">
-                  
                   <i class="fab fa-facebook-f fa-stack-2x "></i>
                 </span>
               </a>
             </li>
 </div>
-            <p style="color: rgba(0,0,0,0.5); font-size: 17.5px; padding-top: 6px; padding-bottom: 4px; line-height: 1.1;" > Copyright @ 2019 White Panda Media Pvt. Ltd. 
-       <br>  All right reserved </p>
- 
+
+            <p style="color: rgba(0,0,0,0.5); font-size: 17.5px; padding-top: 6px; padding-bottom: 4px; line-height: 1.1;" >
+              Copyright @ 2019 White Panda Media Pvt. Ltd. 
+              <br>  All right reserved </p>
+            <p style="color:grey; font-family:Arial; vertical-align: middle; line-height: 1.6; text-decoration:none  ;" >
+                <a href="#" style="color: rgba(0,0,0,0.5);">Privacy policy</a>
+                &emsp;|&emsp;
+                <a href="#" style="color: rgba(0,0,0,0.5);">Terms of service</a>
+                &emsp;|&emsp;
+                <a href="#" style="color: rgba(0,0,0,0.5);">Service agreement</a>
+                &emsp;|&emsp;
+                <a href="#" style="color: rgba(0,0,0,0.5);">Contact us</a>
+            </p>
+
 </div>     
 </center>
 </div>
