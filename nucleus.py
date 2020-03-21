@@ -23,6 +23,8 @@ for i in range(n):
 	continue;
 
 i = n-1
+#PR by sarita pro
+#this is for the second part of the matrix ; lower triangle
 for j in range(1,n):
 	m = i
 	p = j
